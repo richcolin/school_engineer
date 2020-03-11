@@ -1,0 +1,37 @@
+<view wx:if='{{isAdmin}}'>
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="page__hd">
+    <view class="page__title">设备问题</view>
+    <view class="page__desc">后台表单</view>
+  </view>
+  <view class="page__bd">
+    <block wx:for='{{django_data}}' wx:for-item='item'>
+      <view class="weui-form-preview">
+        <view class="weui-form-preview__hd">
+          <label class="weui-form-preview__label">具体班级</label>
+          <em class="weui-form-preview__value">{{item.grade}}年{{item.classes}}班</em>
+        </view>
+        <view class="weui-form-preview__bd">
+
+          <view class="weui-form-preview__item">
+            <label class="weui-form-preview__label">问题时间</label>
+            <text class="weui-form-preview__value">{{item.q_date}}</text>
+          </view>
+          <view class="weui-form-preview__item">
+            <label class="weui-form-preview__label">详细描述</label>
+            <text class="weui-form-preview__value">{{item.question}}</text>
+          </view>
+        </view>
+        <view class="weui-form-preview__ft">
+          <a class="weui-form-preview__btn weui-form-preview__btn_primary">正在处理</a>
+          <a class="weui-form-preview__btn weui-form-preview__btn_primary">处理完毕</a>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>
+</view>
+<view wx:else>
+  <text>请先切换至个人页登录</text>
+</view>
