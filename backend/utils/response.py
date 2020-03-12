@@ -10,11 +10,11 @@
 # 状态码
 class ReturnCode:
     SUCCESS = 0
-
+    IS_ADMIN=505
     FAILED = -100
     WRONG_PARMAS = -101
     RESOURCE_NOT_FOUND = -102
-
+    IS_NOT_ADMIN=510
     UNAUTHORIZED = -500
     BROKEN_AUTHORIZED_DATA = -501
     SESSION_EXPIRED = -502
@@ -37,7 +37,10 @@ class ReturnCode:
             return 'broken authorized data'
         elif code == cls.SESSION_EXPIRED:
             return 'session expired'
-
+        elif code == cls.IS_ADMIN:
+            return 'user is admin'
+        elif code == cls.IS_NOT_ADMIN:
+            return 'user is not admin'
 
 def wrap_json_response(data=None, code=None, message=None):
     response = {}

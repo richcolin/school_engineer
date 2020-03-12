@@ -34,6 +34,10 @@ Page({
       date: e.detail.value
     })
   },
+  onShow: function () {
+    this.onLoad();
+  },
+
   onLoad: function () {
     var that = this
     var cookie = cookieUtil.getCookieFromStorage()
@@ -48,7 +52,7 @@ Page({
           that.setData({
             isAuthorized: true
           })
-          that.updateData()
+   
         } else {
           that.setData({
             isAuthorized: false
@@ -129,7 +133,6 @@ Page({
   }
 
 },
-
 
 
 

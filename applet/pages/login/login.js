@@ -4,7 +4,7 @@ Page({
   mixins: [require('../../mixin/themeChanged')],
   data: {
     password: '',
-    isTeacher:false,
+    group:'student',
     items: [
       { name: '1', value: '电教管理员', checked: 'true' },
       { name: '2', value: '电教老师'},
@@ -22,11 +22,11 @@ Page({
     if(e.detail.value=='2')
     {
       that.setData({
-        isTeacher: true
+        group:'teacher'
       })
     }else{
       that.setData({
-        isTeacher: false
+        group:'student'
       })
     }
     
@@ -59,7 +59,7 @@ Page({
             code: code,
             appId: appId,
             nickname: nickname,
-            group:that.data.isTeacher,
+            group:that.data.group,
             password: that.data.password
            
           },
@@ -67,10 +67,9 @@ Page({
             'content-type': 'application/json' // 默认值
           },
           success(res) {
-            wx.showToast({
-              title: res.data.message,
-            })
-            console.log(res.data.message)
+            // wx.showToast({
+            //   title: res.data.message,
+            // })
             // wx.reLaunch({
             //   url: '../index/index',
 
@@ -89,20 +88,20 @@ Page({
       }
     })
 
-    if (that.data.isTeacher){
-      var nav_url = '../backstage/backstage'
-    }else{
-      var nav_url = '../input/input'
-    }
-    wx.switchTab({
+    // if (that.data.group=='teacher'){
+    //   var nav_url = '../backstage/backstage'
+    // }else{
+    //   var nav_url = '../input/input'
+    // }
+    // wx.reLaunch({
       
-      url: nav_url,
-      success: function (e) {
-        var page = getCurrentPages().pop();
-        if (page == undefined || page == null) return;
-        page.onLoad();
-      }
-    })
+    //   url: nav_url,
+    //   success: function (e) {
+    //     var page = getCurrentPages().pop();
+    //     if (page == undefined || page == null) return;
+    //     page.onLoad();
+    //   }
+    // })
   },
   onGotUserInfo(e) {
     app.globalData.userInfo = e.detail.userInfo

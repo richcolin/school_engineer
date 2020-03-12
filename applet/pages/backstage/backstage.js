@@ -5,48 +5,106 @@ const app = getApp()
 const cookieUtil = require('../../utils/cookie.js')
 Page({
   mixins: [require('../../mixin/themeChanged')],
-  /**
-   * 页面的初始数据
-   */
   data: {
-    isAdmin:1,
-    django_data:'',
+    isAdmin: false,
+    django_data: '',
     isAuthorized: false,
-    grade:'',
-    classes:'',
-    question:'',
-    q_date:'',
+    grade: '',
+    classes: '',
+    question: '',
+    q_date: '',
     array1: ['请选择', '初一', '初二', '初三'],
     array3: ['请选择', '1班', '2班', '3班'],
     value1: 0,
     value3: 0,
   },
 
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function (){
+    this.onLoad()
+  },
+  onPostTap_dealling: function (event) {
+    var postId = event.currentTarget.dataset.postid
     var that = this
     var cookie = cookieUtil.getCookieFromStorage()
     var header = {}
     header.Cookie = cookie
     wx.request({
       url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
-      method: 'GET',
+      method: 'put',
       header: header,
       data: {
+        id:postId,
+        process:'dealling'
       },
       success: function (res) {
-        console.log(res.data.message)
-        that.setData({
-          django_data: res.data.data
-        })
-
-
+        if (res.data.result_code == -500) {
+          that.setData({
+            isAdmin: false,
+          })
+          wx.showToast({
+            title: '请到首页进行登录',
+          })
+        } else if (res.data.result_code == 510) {
+          that.setData({
+            isAdmin: false,
+          })
+          wx.showToast({
+            title: '登陆成功',
+          })
+        }
+        else {
+          that.setData({
+            isAdmin: true,
+            django_data: res.data.data
+          })
+          console.log(that.data.django_data)
+        }
       }
     })
+    this.onLoad()
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function () {
+  onPostTap_over: function (event) {
+    var postId = event.currentTarget.dataset.postid
+    var that = this
+    var cookie = cookieUtil.getCookieFromStorage()
+    var header = {}
+    header.Cookie = cookie
+    wx.request({
+      url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
+      method: 'put',
+      header: header,
+      data: {
+        id: postId,
+        process: 'over'
+      },
+      success: function (res) {
+        if (res.data.result_code == -500) {
+          that.setData({
+            isAdmin: false,
+          })
+          wx.showToast({
+            title: '请到首页进行登录',
+          })
+        } else if (res.data.result_code == 510) {
+          that.setData({
+            isAdmin: false,
+          })
+          wx.showToast({
+            title: '你不是管理员',
+          })
+        }
+        else {
+          that.setData({
+            isAdmin: true,
+            django_data: res.data.data
+          })
+          console.log(that.data.django_data)
+        }
+      }
+    })
+    this.onLoad()
+  },
+  onLoad: function() {
     var that = this
     var cookie = cookieUtil.getCookieFromStorage()
     var header = {}
@@ -55,15 +113,35 @@ Page({
       url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
       method: 'GET',
       header: header,
-      data: {
-      },
-      success: function (res) {
-        console.log(res.data.message)
-        that.setData({
-          isAdmin:res.data
-        })
-        console.log(res.data)
-      
+      data: {},
+      success: function(res) {
+        
+        if (res.data.result_code == -500) {
+          that.setData({
+            isAdmin: false,
+            isAuthorized:false
+          })
+          wx.showToast({
+            title: '请到首页进行登录',
+          })
+        } else if (res.data.result_code == 510){
+          that.setData({
+            isAdmin: false,
+            django_data: res.data.data,
+            isAuthorized:true
+          })
+          wx.showToast({
+            title: '你不是管理员',
+          })
+        }
+        else{
+          that.setData({
+            isAuthorized: true,
+            isAdmin:true,
+            django_data: res.data.data
+          })
+          console.log(that.data.django_data)
+        }
       }
     })
     if (app.globalData.userInfo) {
@@ -96,49 +174,46 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
-  },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
 
-  },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
-
+  onShow:function(){
+    this.onLoad()
+  },
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

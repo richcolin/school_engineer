@@ -3,6 +3,7 @@
 
 from django.db import models
 from authorization.models import User
+
 # Create your models here.
 class device_question(models.Model):
 
@@ -12,8 +13,10 @@ class device_question(models.Model):
 
     question=models.CharField(max_length=256)
 
-    user_openid=models.ForeignKey(User,on_delete=True)
+    user_openid=models.CharField(max_length=256)
 
     q_date=models.DateField(auto_now=False)
 
-    q_status=models.IntegerField()
+    q_dealing=models.BooleanField(default=False)
+
+    q_over=models.BooleanField(default=False)
