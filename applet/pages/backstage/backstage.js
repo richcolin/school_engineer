@@ -47,6 +47,7 @@ Page({
         } else if (res.data.result_code == 510) {
           that.setData({
             isAdmin: false,
+            django_data: res.data.data
           })
           wx.showToast({
             title: '登陆成功',
@@ -58,10 +59,11 @@ Page({
             django_data: res.data.data
           })
           console.log(that.data.django_data)
+          that.onLoad()
         }
       }
     })
-    this.onLoad()
+ 
   },
   onPostTap_over: function (event) {
     var postId = event.currentTarget.dataset.postid
@@ -88,6 +90,7 @@ Page({
         } else if (res.data.result_code == 510) {
           that.setData({
             isAdmin: false,
+            django_data: res.data.data
           })
           wx.showToast({
             title: '你不是管理员',
@@ -98,11 +101,13 @@ Page({
             isAdmin: true,
             django_data: res.data.data
           })
+          that.onLoad()
           console.log(that.data.django_data)
         }
+       
       }
     })
-    this.onLoad()
+    
   },
   onLoad: function() {
     var that = this
