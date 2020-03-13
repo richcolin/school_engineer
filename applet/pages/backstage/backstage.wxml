@@ -1,9 +1,10 @@
-<view wx:if='{{isAuthorized}}'>
+<view wx:if='1'>
   <!-- {{isAdmin}} -->
   <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
+    
       <view class="page__title">设备问题</view>
-      <view class="page__desc">后台表单</view>
+      <view class="page__desc" bindtap="historyProblem" >历史表单</view>
     </view>
     <view class="page__bd">
       <block wx:for='{{django_data}}' wx:for-item='item'>

@@ -5,17 +5,54 @@ const cookieUtil = require('../../utils/cookie.js')
 
 Page({
   data: {
+    textinput:"",
+    toast: false,
+    loading: false,
+    hideToast: false,
+    hideLoading: false,
     isAuthorized: false,
     date: "",
     array1: ['请选择','初一', '初二', '初三'],
-    array3: ['请选择','1班', '2班', '3班'],
+    array3: ['请选择', '1班', '2班', '3班', '4班', '5班', '6班', '7班', '8班', '9班', '10班'],
     value1: 0,
     value3: 0,
 
   },
-
+  mixins: [require('../../mixin/themeChanged')],
   onPullDownRefresh: function () {
     this.onLoad()
+  },
+  openToast: function () {
+    this.setData({
+      toast: true
+    });
+    setTimeout(() => {
+      this.setData({
+        hideToast: true
+      });
+      setTimeout(() => {
+        this.setData({
+          toast: false,
+          hideToast: false,
+        });
+      }, 300);
+    }, 3000);
+  },
+  openLoading: function () {
+    this.setData({
+      loading: true
+    });
+    setTimeout(() => {
+      this.setData({
+        hideLoading: true
+      });
+      setTimeout(() => {
+        this.setData({
+          loading: false,
+          hideLoading: false,
+        });
+      }, 300);
+    }, 3000);
   },
   updateData: function () {
     wx.showLoading({
@@ -121,10 +158,21 @@ Page({
       success: function (res) {
         console.log(res.data.data)
         that.setData({
-
-          form_info: ''
+          toast: true,
+          textinput: ''
         })
         wx.hideLoading()
+        setTimeout(() => {
+          that.setData({
+            hideToast: true
+          });
+          setTimeout(() => {
+            that.setData({
+              toast: false,
+              hideToast: false,
+            });
+          }, 300);
+        }, 3000);
       }
     })
   },

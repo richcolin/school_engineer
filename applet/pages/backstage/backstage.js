@@ -18,6 +18,9 @@ Page({
     value1: 0,
     value3: 0,
   },
+ historyProblem:function(){
+console.log('history')
+ },
 
   onPullDownRefresh: function (){
     this.onLoad()
@@ -92,9 +95,6 @@ Page({
             isAdmin: false,
             django_data: res.data.data
           })
-          wx.showToast({
-            title: '你不是管理员',
-          })
         }
         else {
           that.setData({
@@ -134,9 +134,6 @@ Page({
             isAdmin: false,
             django_data: res.data.data,
             isAuthorized:true
-          })
-          wx.showToast({
-            title: '你不是管理员',
           })
         }
         else{
