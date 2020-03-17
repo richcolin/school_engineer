@@ -3,8 +3,8 @@
   <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
     
-      <view class="page__title">设备问题</view>
-      <view class="page__desc" wx:if='{{isAdmin}}'  catch:tap="navigateToHistory" >历史表单</view>
+      <view class="page__title">处理完毕列表</view>
+    
     </view>
     <view class="page__bd">
       <block wx:for='{{django_data}}' wx:for-item='item'>
@@ -23,16 +23,9 @@
               <label class="weui-form-preview__label">详细描述</label>
               <text class="weui-form-preview__value">{{item.question}}</text>
             </view>
-            <view class="weui-form-preview__item">
-              <label class="weui-form-preview__label">处理状态</label>
-              <text class="weui-form-preview__value" wx:if="{{item.q_dealing==false}}">还未处理</text>
-              <text class="weui-form-preview__value" wx:if="{{item.q_dealing}}">正在处理</text>
-            </view>
+
           </view>
-          <view class="weui-form-preview__ft" wx:if='{{isAdmin}}'>
-            <button catch:tap="onPostTap_dealling" disabled="{{item.q_dealing}}" data-postid="{{item.id}}" class="weui-form-preview__btn weui-form-preview__btn_primary"> 正在处理</button>
-            <button catch:tap="onPostTap_over" disabled="{{item.q_over}}" data-postid="{{item.id}}" class="weui-form-preview__btn weui-form-preview__btn_primary"> 处理完毕</button>
-          </view>
+
         </view>
       </block>
     </view>

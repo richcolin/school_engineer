@@ -29,7 +29,7 @@ Page({
 
   },
 
-  onPullDownRefresh: function (){
+  onPullDownRefresh: function () {
     this.onLoad()
   },
   onPostTap_dealling: function (event) {
@@ -43,8 +43,8 @@ Page({
       method: 'put',
       header: header,
       data: {
-        id:postId,
-        process:'dealling'
+        id: postId,
+        process: 'dealling'
       },
       success: function (res) {
         if (res.data.result_code == -500) {
@@ -73,7 +73,7 @@ Page({
         }
       }
     })
- 
+
   },
   onPostTap_over: function (event) {
     var postId = event.currentTarget.dataset.postid
@@ -81,54 +81,42 @@ Page({
     var cookie = cookieUtil.getCookieFromStorage()
     var header = {}
     header.Cookie = cookie
-    wx.showModal({
-      title: '提示',
-      content: '将状态转变为处理完毕？',
-      success(res) {
-        if (res.confirm) {
-          wx.request({
-            url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
-            method: 'put',
-            header: header,
-            data: {
-              id: postId,
-              process: 'over'
-            },
-            success: function (res) {
-              if (res.data.result_code == -500) {
-                that.setData({
-                  isAdmin: false,
-                })
-                wx.showToast({
-                  title: '请到首页进行登录',
-                })
-              } else if (res.data.result_code == 510) {
-                that.setData({
-                  isAdmin: false,
-                  django_data: res.data.data
-                })
-              }
-              else {
-                that.setData({
-                  isAdmin: true,
-                  django_data: res.data.data
-                })
-                that.onLoad()
-                console.log(that.data.django_data)
-              }
-
-            }
+    wx.request({
+      url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
+      method: 'put',
+      header: header,
+      data: {
+        id: postId,
+        process: 'over'
+      },
+      success: function (res) {
+        if (res.data.result_code == -500) {
+          that.setData({
+            isAdmin: false,
           })
-        } else if (res.cancel) {
-          console.log('用户点击取消')
+          wx.showToast({
+            title: '请到首页进行登录',
+          })
+        } else if (res.data.result_code == 510) {
+          that.setData({
+            isAdmin: false,
+            django_data: res.data.data
+          })
         }
+        else {
+          that.setData({
+            isAdmin: true,
+            django_data: res.data.data
+          })
+          that.onLoad()
+          console.log(that.data.django_data)
+        }
+
       }
     })
-   
 
-    
   },
-  onLoad: function() {
+  onLoad: function () {
     var that = this
     var cookie = cookieUtil.getCookieFromStorage()
     var header = {}
@@ -138,29 +126,29 @@ Page({
       method: 'GET',
       header: header,
       data: {
-        type:'backstage'
+        type:'history'
       },
-      success: function(res) {
-        
+      success: function (res) {
+
         if (res.data.result_code == -500) {
           that.setData({
             isAdmin: false,
-            isAuthorized:false
+            isAuthorized: false
           })
           wx.showToast({
             title: '请到首页进行登录',
           })
-        } else if (res.data.result_code == 510){
+        } else if (res.data.result_code == 510) {
           that.setData({
             isAdmin: false,
             django_data: res.data.data,
-            isAuthorized:true
+            isAuthorized: true
           })
         }
-        else{
+        else {
           that.setData({
             isAuthorized: true,
-            isAdmin:true,
+            isAdmin: true,
             django_data: res.data.data
           })
           console.log(that.data.django_data)
@@ -197,7 +185,7 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
@@ -208,14 +196,14 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
@@ -227,16 +215,16 @@ Page({
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
-  onShow:function(){
+  onShow: function () {
     this.onLoad()
   },
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

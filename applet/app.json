@@ -2,7 +2,8 @@
   "pages": [
     "pages/login/login",
     "pages/input/input",
-    "pages/backstage/backstage"
+    "pages/backstage/backstage",
+    "pages/history/history"
   ],
   "tabBar": {
     "list": [
