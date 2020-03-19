@@ -51,6 +51,7 @@ App({
   globalData: {
     userInfo: null,
     appId: 'wxbb89b306b4346193',
+    // serverUrl: 'https://richcolin.xyz',
     serverUrl: 'http://127.0.0.1:8000',
     apiVersion: '/api/v1.0',
     auth: {

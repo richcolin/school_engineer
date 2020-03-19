@@ -21,5 +21,6 @@ urlpatterns = [
     path('joke', service.joke),
     path('today', service.history_today),
     path('stock', service.stock),
-    path('sch_engineer', sch_engineer.sch_engineer.as_view())
+    path('sch_engineer', sch_engineer.sch_engineer.as_view()),
+    path('menu', menu.get_menu)
 ]

@@ -1,0 +1,12 @@
+published:
+  - app:
+      category: school
+      application: school_engineer
+      name: 媒体
+      publish_date: 2020-03-19
+      url: /service/sch_engineer
+      desc: this is a school app.
+
+
+developing:
+  - app:

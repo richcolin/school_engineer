@@ -103,6 +103,11 @@ Page({
     //   }
     // })
   },
+  return_menu(e){
+    wx.navigateTo({
+      url: '../menu/menu',
+    })
+  },
   onGotUserInfo(e) {
     app.globalData.userInfo = e.detail.userInfo
   },

@@ -30,6 +30,7 @@
     <view class="weui-form__opr-area">
       <button class="weui-btn mini-btn" type="primary" disabled="{{isLogin}}" bindtap='authorize' open-type='getUserInfo' bindgetuserinfo='onGotUserInfo'>授权登录</button>
       <button class="weui-btn mini-btn" type="primary" disabled="{{!isLogin}}" bindtap='logout' >注销登录</button>
+      <button class="weui-btn mini-btn" type="default" bindtap='return_menu' >返回菜单</button>
     </view>
   </view>
   
