@@ -10,6 +10,13 @@ import rest_framework
 from  rest_framework.views import APIView
 from apis.models import *
 from authorization.models import *
+import django
+from email.mime.text import MIMEText
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+import smtplib
+django.setup()
+
+
 class sch_engineer(APIView, CommonResponseMixin):
     def put(self,request):
         if request.session['group']=='teacher':
@@ -57,8 +64,17 @@ class sch_engineer(APIView, CommonResponseMixin):
             return JsonResponse(data=response, safe=False)
         # user_obj=User.objects.filter(open_id=open_id).first()
         new_question['user_openid']=request.session['open_id']
-
+        email_msg='日期:'+new_question['q_date']+'\n'+'班级:'+new_question['grade']+'年'+new_question['classes']+'班'+'\n'+'具体问题:'+new_question['question']
         device_question.objects.create(**new_question)
+        msg = MIMEText(email_msg, "plain", "utf-8")
+        msg['FROM'] = "维修部"
+        msg['Subject'] = "保修单"
+        receivers = ['821908303@qq.com']
+        server = smtplib.SMTP_SSL(settings.EMAIL_HOST, settings.EMAIL_PORT)
+        server.set_debuglevel(1)
+        server.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
+        server.sendmail(settings.EMAIL_FROM, receivers, msg.as_string())
+        server.close()
         # print('post',new_question)
         response = self.wrap_json_response(code=ReturnCode.SUCCESS)
         return JsonResponse(data=response, safe=False)

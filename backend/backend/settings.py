@@ -179,3 +179,16 @@ LOGGING = {
         }
     }
 }
+# Email config
+# QQ邮箱 SMTP 服务器地址
+EMAIL_HOST = 'smtp.qq.com'
+# 端口
+EMAIL_PORT = 465
+# 发送邮件的邮箱
+EMAIL_HOST_USER = '821908303@qq.com'
+# 在邮箱中设置的客户端授权密码
+EMAIL_HOST_PASSWORD = 'swaoscrkwnihbffc'
+# 开启TLS
+EMAIL_USE_TLS = True
+# 收件人看到的发件人
+EMAIL_FROM = '821908303@qq.com'

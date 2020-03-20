@@ -257,3 +257,93 @@ django.core.exceptions.ValidationError: ["'' value has an invalid date format. I
 2020-03-20 11:11:40,248 [Thread-15: 10900]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 2260
 2020-03-20 11:11:40,341 [Thread-16: 4264]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 2260
 2020-03-20 11:11:44,893 [Thread-17: 4812]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2260
+2020-03-20 12:10:52,798 [Thread-2: 5572]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/logout HTTP/1.1" 200 48
+2020-03-20 12:10:54,875 [Thread-3: 16228]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 12:10:57,249 [Thread-4: 3288]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 12:10:59,447 [Thread-5: 6560]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2264
+2020-03-20 12:11:13,113 [Thread-6: 14440]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/logout HTTP/1.1" 200 48
+2020-03-20 12:11:14,117 [Thread-7: 11708]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 12:11:15,967 [Thread-8: 17032]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 12:11:18,061 [Thread-9: 16780]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2260
+2020-03-20 12:11:19,959 [Thread-10: 420]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-20 12:11:20,048 [Thread-11: 17404]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2259
+2020-03-20 12:11:21,349 [Thread-12: 17372]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-20 12:11:21,416 [Thread-13: 17368]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2258
+2020-03-20 12:11:22,504 [Thread-14: 17308]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-20 12:11:22,569 [Thread-15: 9200]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2257
+2020-03-20 12:11:24,050 [Thread-16: 3376]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-20 12:11:24,122 [Thread-17: 14456]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2256
+2020-03-20 12:11:28,986 [Thread-18: 15400]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-20 12:11:29,076 [Thread-19: 15156]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2092
+2020-03-20 12:11:31,030 [Thread-20: 16724]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-20 12:11:31,109 [Thread-21: 12192]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 1883
+2020-03-20 12:11:33,078 [Thread-22: 16708]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-20 12:11:33,149 [Thread-23: 16728]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 1719
+2020-03-20 13:39:46,431 [Thread-2: 13372]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/logout HTTP/1.1" 200 48
+2020-03-20 13:39:49,028 [Thread-3: 15768]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 13:39:51,145 [Thread-4: 12148]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 13:40:03,389 [Thread-5: 7588]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py:handle_uncaught_exception:118 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\xuekun\Desktop\school_engineer-master\school_engineer-master\backend\apis\views\sch_engineer.py", line 73, in post
+    server = smtplib.SMTP_SSL(settings.EMAIL_HOST, settings.EMAIL_PORT)
+AttributeError: module 'backend.settings' has no attribute 'EMAIL_HOST'
+2020-03-20 13:40:03,505 [Thread-5: 7588]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 ERROR - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 500 17270
+2020-03-20 13:41:08,056 [Thread-2: 2184]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 13:48:19,461 [Thread-2: 14612]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py:handle_uncaught_exception:118 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\python3.6\lib\email\message.py", line 356, in set_charset
+    cte(self)
+TypeError: 'str' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\xuekun\Desktop\school_engineer-master\school_engineer-master\backend\apis\views\sch_engineer.py", line 69, in post
+    msg = MIMEText(new_question, "plain", "utf-8")
+  File "C:\python3.6\lib\email\mime\text.py", line 42, in __init__
+    self.set_payload(_text, _charset)
+  File "C:\python3.6\lib\email\message.py", line 321, in set_payload
+    self.set_charset(charset)
+  File "C:\python3.6\lib\email\message.py", line 364, in set_charset
+    payload = payload.encode('ascii', 'surrogateescape')
+AttributeError: 'dict' object has no attribute 'encode'
+2020-03-20 13:48:19,569 [Thread-2: 14612]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 ERROR - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 500 17726
+2020-03-20 13:49:23,958 [Thread-2: 5116]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 13:57:55,698 [Thread-2: 16960]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 14:00:44,647 [Thread-2: 16584]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
