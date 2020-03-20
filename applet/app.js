@@ -52,7 +52,7 @@ App({
     userInfo: null,
     appId: 'wxbb89b306b4346193',
     // serverUrl: 'https://richcolin.xyz',
-    serverUrl: 'http://127.0.0.1:8000',
+    serverUrl: 'https://62.234.90.183',
     apiVersion: '/api/v1.0',
     auth: {
       isAuthorized: false
