@@ -5,6 +5,7 @@ const cookieUtil = require('../../utils/cookie.js')
 
 Page({
   data: {
+    toast_reflection:'',
     textinput:"",
     toast: false,
     loading: false,
@@ -156,7 +157,16 @@ Page({
         form_contents: e.detail.value
       },
       success: function (res) {
-        console.log(res.data.data)
+        if(res.data.message=='wrong params')
+        {
+          that.setData({
+            toast_reflection:false
+          })
+        }else{
+          that.setData({
+            toast_reflection: true
+          })
+        }
         that.setData({
           toast: true,
           textinput: ''

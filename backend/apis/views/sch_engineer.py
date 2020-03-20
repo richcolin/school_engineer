@@ -48,14 +48,17 @@ class sch_engineer(APIView, CommonResponseMixin):
             return JsonResponse(data=response, safe=False)
     def post(self, request):
         new_question = request.data['form_contents']
+        q_date=new_question['q_date']
 
-        # open_id=request.session['open_id']
+        open_id=request.session['open_id']
+        one_day_count=device_question.objects.filter(user_openid=open_id,q_date=q_date).count()
+        if one_day_count>1:
+            response = self.wrap_json_response(code=ReturnCode.WRONG_PARMAS)
+            return JsonResponse(data=response, safe=False)
         # user_obj=User.objects.filter(open_id=open_id).first()
-
         new_question['user_openid']=request.session['open_id']
 
         device_question.objects.create(**new_question)
         # print('post',new_question)
-
         response = self.wrap_json_response(code=ReturnCode.SUCCESS)
         return JsonResponse(data=response, safe=False)

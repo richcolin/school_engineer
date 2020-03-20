@@ -51,10 +51,10 @@ def __authorize_by_code(request):
         response['result_code'] = ReturnCode.FAILED
         response['message'] = '密码错误.'
         return JsonResponse(response, safe=False)
-    if  group=='student' and password!=student_pwd:
-        response['result_code'] = ReturnCode.FAILED
-        response['message'] = '密码错误.'
-        return JsonResponse(response, safe=False)
+    # if  group=='student' and password!=student_pwd:
+    #     response['result_code'] = ReturnCode.FAILED
+    #     response['message'] = '密码错误.'
+    #     return JsonResponse(response, safe=False)
     request.session['open_id'] = open_id
     request.session['is_authorized'] = True
     request.session['group']=group

@@ -3,18 +3,39 @@ const cookieUtil = require('../../utils/cookie.js')
 Page({
   mixins: [require('../../mixin/themeChanged')],
   data: {
+    text_place_holder:'学生免密码',
     password: '',
     group:'student',
-    items: [
-      { name: '1', value: '电教管理员', checked: 'true' },
-      { name: '2', value: '电教老师'},
-    ]
+    array2: ['学生', '教师'],
+    value2:0,
+    input_bool:true
   },
   bindKeyInput: function (e) {
    
     this.setData({
       password: e.detail.value
     })
+  },
+  bindPicker2Change: function (e) {
+    this.setData({
+      value2: e.detail.value
+    })
+    var that = this
+    if (e.detail.value == '1') {
+      that.setData({
+        group: 'teacher',
+        input_bool: false,
+        text_place_holder:'教师请输入密码',
+        textinput: ''
+      })
+    } else {
+      that.setData({
+        group: 'student',
+        input_bool: true,
+        text_place_holder: '学生免密码',
+        textinput: ''
+      })
+    }
   },
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)

@@ -88,3 +88,172 @@ FileNotFoundError: [Errno 2] No such file or directory: 'F:\\微信小程序\\Fr
 2020-03-19 15:48:56,733 [Thread-2: 7620]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
 2020-03-19 15:48:57,585 [Thread-2: 7620]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 222
 2020-03-19 08:17:26,106 [uWSGIWorker1Core0: 140563316180800]/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py:response_for_exception:74 ERROR - Invalid HTTP_HOST header: 'uwsgi'. You may need to add 'uwsgi' to ALLOWED_HOSTS.
+2020-03-20 09:42:33,141 [Thread-2: 6276]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 09:44:43,651 [Thread-2: 9168]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 09:44:46,846 [Thread-3: 6716]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 09:44:46,900 [Thread-4: 13956]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 09:45:08,118 [Thread-5: 3400]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 09:49:22,948 [Thread-2: 5696]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py:handle_uncaught_exception:118 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\xuekun\Desktop\school_engineer-master\school_engineer-master\backend\apis\views\sch_engineer.py", line 54, in post
+    one_day_count=device_question.objects.filter(openid=open_id,q_date=q_date).count()
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1153, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1379, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'openid' into field. Choices are: classes, grade, id, q_date, q_dealing, q_over, question, user_openid
+2020-03-20 09:49:23,146 [Thread-2: 5696]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 ERROR - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 500 18929
+2020-03-20 09:50:00,684 [Thread-2: 7068]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 09:50:04,251 [Thread-3: 12664]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 09:50:09,060 [Thread-4: 13468]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 09:52:46,261 [Thread-2: 4596]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 09:52:53,303 [Thread-3: 13448]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 09:53:14,034 [Thread-4: 11828]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 09:53:27,271 [Thread-5: 3264]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 09:53:27,569 [Thread-6: 12396]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 09:53:29,873 [Thread-7: 13416]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py:handle_uncaught_exception:118 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\python3.6\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\xuekun\Desktop\school_engineer-master\school_engineer-master\backend\apis\views\sch_engineer.py", line 54, in post
+    one_day_count=device_question.objects.filter(user_openid=open_id,q_date=q_date).count()
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1253, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1277, in _add_q
+    split_subq=split_subq,
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1215, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\sql\query.py", line 1085, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\lookups.py", line 68, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\fields\__init__.py", line 1271, in get_prep_value
+    return self.to_python(value)
+  File "C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\db\models\fields\__init__.py", line 1246, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid date format. It must be in YYYY-MM-DD format."]
+2020-03-20 09:53:29,946 [Thread-7: 13416]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 ERROR - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 500 19242
+2020-03-20 09:57:15,111 [Thread-8: 10860]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 09:57:19,253 [Thread-9: 4184]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 09:57:19,295 [Thread-10: 2248]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 09:57:29,107 [Thread-11: 4956]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 10:02:18,849 [Thread-2: 2712]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:02:25,686 [Thread-3: 4852]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:02:25,696 [Thread-4: 6208]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:02:36,392 [Thread-5: 8348]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 10:02:59,085 [Thread-6: 8772]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 10:15:44,391 [Thread-2: 3128]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:15:47,811 [Thread-3: 8856]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 10:15:56,526 [Thread-4: 4600]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 10:16:03,314 [Thread-5: 14324]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 10:19:30,989 [Thread-2: 4600]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:19:36,841 [Thread-4: 4980]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:19:36,853 [Thread-3: 9012]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:19:45,819 [Thread-5: 5412]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 10:19:52,896 [Thread-6: 6956]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 10:23:01,887 [Thread-7: 4132]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:23:07,249 [Thread-8: 3560]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:23:07,273 [Thread-9: 32]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:23:18,441 [Thread-10: 7516]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 10:23:22,728 [Thread-11: 5452]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-20 10:23:27,095 [Thread-12: 2240]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-20 10:27:47,271 [Thread-13: 13832]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:29:30,633 [Thread-14: 408]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:33:52,321 [Thread-2: 6068]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 10:42:13,197 [Thread-2: 10348]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:42:49,536 [Thread-3: 3292]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:44:10,193 [Thread-4: 5532]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:45:08,942 [Thread-5: 11596]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:46:15,966 [Thread-6: 7388]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:46:42,475 [Thread-7: 10476]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:47:08,813 [Thread-8: 1220]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:49:06,791 [Thread-9: 6596]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:51:42,012 [Thread-10: 13368]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:53:58,303 [Thread-11: 14404]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:54:11,695 [Thread-12: 14168]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 61
+2020-03-20 10:54:13,067 [Thread-13: 8916]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:54:13,122 [Thread-14: 2716]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:54:15,292 [Thread-15: 14456]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:54:31,410 [Thread-16: 8196]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:55:42,513 [Thread-17: 6360]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/logout HTTP/1.1" 200 48
+2020-03-20 10:55:43,906 [Thread-18: 3440]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 61
+2020-03-20 10:57:16,053 [Thread-19: 480]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 10:57:26,192 [Thread-20: 11760]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 10:57:27,656 [Thread-21: 7636]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:57:27,812 [Thread-22: 3404]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 10:57:29,478 [Thread-23: 14468]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2260
+2020-03-20 10:57:29,500 [Thread-24: 10996]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2260
+2020-03-20 11:07:20,296 [Thread-2: 3988]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 11:08:54,017 [Thread-7: 3976]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 11:08:55,739 [Thread-8: 14360]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 11:08:58,539 [Thread-10: 488]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2264
+2020-03-20 11:08:58,571 [Thread-9: 8212]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2264
+2020-03-20 11:10:39,366 [Thread-2: 8864]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-20 11:11:02,153 [Thread-4: 2808]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 61
+2020-03-20 11:11:05,120 [Thread-5: 2796]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 11:11:05,324 [Thread-6: 11600]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 11:11:13,557 [Thread-7: 6460]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/logout HTTP/1.1" 200 48
+2020-03-20 11:11:14,567 [Thread-8: 6284]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 11:11:21,666 [Thread-9: 8576]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2264
+2020-03-20 11:11:21,889 [Thread-10: 6604]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2264
+2020-03-20 11:11:32,642 [Thread-11: 9232]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/logout HTTP/1.1" 200 48
+2020-03-20 11:11:33,738 [Thread-12: 14588]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-20 11:11:35,018 [Thread-13: 10960]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-20 11:11:37,430 [Thread-14: 13348]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2260
+2020-03-20 11:11:40,248 [Thread-15: 10900]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 2260
+2020-03-20 11:11:40,341 [Thread-16: 4264]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 2260
+2020-03-20 11:11:44,893 [Thread-17: 4812]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 2260
