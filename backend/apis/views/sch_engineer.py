@@ -68,7 +68,7 @@ class sch_engineer(APIView, CommonResponseMixin):
         device_question.objects.create(**new_question)
         msg = MIMEText(email_msg, "plain", "utf-8")
         msg['FROM'] = "维修部"
-        msg['Subject'] = "保修单"
+        msg['Subject'] = "报修单"
         receivers = ['821908303@qq.com']
         server = smtplib.SMTP_SSL(settings.EMAIL_HOST, settings.EMAIL_PORT)
         server.set_debuglevel(1)
