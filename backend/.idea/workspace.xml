@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb9e777d-58d6-4b76-abcb-c2cd83d8b3df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../applet/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../applet/pages/backstage/backstage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/pages/backstage/backstage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../applet/pages/history/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/pages/history/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../applet/pages/history/history.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/pages/history/history.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../applet/pages/input/input.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/pages/input/input.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../applet/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/pages/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../applet/pages/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/pages/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../applet/pages/menu/menu.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../applet/pages/menu/menu.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/migrations/0002_device_question_user_openid.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/migrations/0003_auto_20200312_2217.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/migrations/0004_auto_20200312_2239.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apis/views/sch_engineer.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/views/sch_engineer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/backend.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/backend.log" afterDir="false" />
     </list>
@@ -65,11 +49,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apis/views/sch_engineer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="77" column="89" selection-start-line="77" selection-start-column="89" selection-end-line="77" selection-end-column="89" />
+            <state relative-caret-position="228">
+              <caret line="75" selection-start-line="75" selection-end-line="76" selection-end-column="37" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/fields/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="1242" selection-start-line="1242" selection-end-line="1242" />
             </state>
           </provider>
         </entry>
@@ -83,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apis/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="336">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="e#26#54#0" expanded="true" />
               </folding>
@@ -101,12 +94,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/backend.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/authorization/apps.py">
+        <entry file="file://$PROJECT_DIR$/apis/admin.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -140,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/authorization/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="320">
+              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding>
                 <element signature="e#24#75#0" expanded="true" />
               </folding>
@@ -420,15 +408,15 @@
       <workItem from="1584599344474" duration="3377000" />
       <workItem from="1584668114019" duration="9242000" />
       <workItem from="1584794624166" duration="48000" />
-      <workItem from="1584853030497" duration="4097000" />
+      <workItem from="1584853030497" duration="7334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96793000" />
+    <option name="totallyTimeSpent" value="100030000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16151386" />
@@ -462,9 +450,6 @@
     <SUITE FILE_PATH="coverage/backend$logdemo.coverage" NAME="logdemo Coverage Results" MODIFIED="1584495920870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ops" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/wx/demo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/thirdparty/juhe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -486,9 +471,6 @@
           <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apis/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../applet/pages/homepage/homepage.wxml" />
     <entry file="file://$PROJECT_DIR$/backend/urls.py">
@@ -665,9 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/authorization/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/backend.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -695,16 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/authorization/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#24#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/utils/datastructures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -719,23 +688,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apis/views/sch_engineer.py">
+    <entry file="file://$PROJECT_DIR$/apis/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authorization/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authorization/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="77" column="89" selection-start-line="77" selection-start-column="89" selection-end-line="77" selection-end-column="89" />
+        <state relative-caret-position="320">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#24#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apis/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="336">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#26#54#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/views/sch_engineer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="75" selection-start-line="75" selection-end-line="76" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1242" selection-start-line="1242" selection-end-line="1242" />
         </state>
       </provider>
     </entry>

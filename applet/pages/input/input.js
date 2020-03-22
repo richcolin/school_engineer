@@ -142,6 +142,19 @@ Page({
   },
 
   formSubmit: function (e) {
+    that=this
+    if (that.data.value1 == "0" || that.data.value3 == "0" ||that.data.date=='' ){
+      console.log(0)
+      wx.showToast({
+        title: '请填写完整信息',
+        icon: 'none',
+        duration: 2000
+      })
+      
+    }else{
+    wx.showLoading({
+      title: '数据提交中',
+    })
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     var that = this;
     var header = {}
@@ -185,6 +198,7 @@ Page({
         }, 3000);
       }
     })
+    }
   },
   formReset: function () {
     console.log('form发生了reset事件')

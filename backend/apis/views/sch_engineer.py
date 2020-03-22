@@ -72,8 +72,9 @@ class sch_engineer(APIView, CommonResponseMixin):
         new_question = request.data['form_contents']
         import time
         truly_date = time.strftime('%Y-%m-%d')
-        q_date=new_question['q_date']
 
+        classes=new_question['classes']
+        grade=new_question['classes']
         open_id=request.session['open_id']
         one_day_count=device_question.objects.filter(user_openid=open_id,truly_date=truly_date).count()
         if one_day_count>1:
