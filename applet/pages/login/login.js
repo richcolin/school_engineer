@@ -88,22 +88,27 @@ Page({
             'content-type': 'application/json' // 默认值
           },
           success(res) {
-            // wx.showToast({
-            //   title: res.data.message,
-            // })
-            // wx.reLaunch({
-            //   url: '../index/index',
+            console.log(res.data)
+            if(res.data.result_code==-100){
+              wx.showToast({
+                title: res.data.message,
+              })
+            } else if (res.data.result_code == 0) {
+              wx.showToast({
+                title: '登陆成功',
+              })
 
-            // })
-            // 保存cookie
-            var cookie = cookieUtil.getSessionIDFromResponse(res)
-            cookieUtil.setCookieToStorage(cookie)
-            that.setData({
-              isLogin: true,
-              userInfo: app.globalData.userInfo,
-              hasUserInfo: true
-            })
-            app.setAuthStatus(true)
+              var cookie = cookieUtil.getSessionIDFromResponse(res)
+              cookieUtil.setCookieToStorage(cookie)
+              that.setData({
+                isLogin: true,
+                userInfo: app.globalData.userInfo,
+                hasUserInfo: true
+              })
+              app.setAuthStatus(true)
+             }
+           
+
           }
         })
       }

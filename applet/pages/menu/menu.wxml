@@ -16,4 +16,7 @@
       </block>
     </view>
   </view>
+  		<view class="weui-footer weui-footer_fixed-bottom">
+			<view class="weui-footer__text">制作者：薛昆</view>
+		</view>
 </view>
