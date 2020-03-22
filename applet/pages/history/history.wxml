@@ -4,7 +4,11 @@
     <view class="page__hd">
     
       <view class="page__title">处理完毕列表</view>
-    
+    		<view class="button-sp-area">
+			<a class="weui-btn weui-btn_mini weui-btn_primary" bindtap='classess'>班级</a>
+			<a class="weui-btn weui-btn_mini weui-btn_default" bindtap='datess'>日期</a>
+      <a class="weui-btn weui-btn_mini weui-btn_primary" bindtap='classess_over'>班级倒序</a>
+		</view>
     </view>
     <view class="page__bd">
       <block wx:for='{{django_data}}' wx:for-item='item'>

@@ -37,15 +37,30 @@ class sch_engineer(APIView, CommonResponseMixin):
             return JsonResponse(data=response, safe=False)
 
     def get(self, request):
-
+        kinds=request.GET['kind']
+        print(kinds)
+        typess=request.GET['type']
         if not already_authorized(request):
             response = self.wrap_json_response({}, code=ReturnCode.UNAUTHORIZED)
             return JsonResponse(data=response, safe=False)
-        if request.session['group']=='teacher':
-            question_set=device_question.objects.filter(q_over=False).order_by('-q_date')
+        if request.session['group'] == 'teacher':
+            if kinds=='done':
+                question_set=device_question.objects.filter(q_over=True).order_by('-q_date')
+                if typess=='classess':
+                    question_set = device_question.objects.filter(q_over=True).order_by('grade','classes')
+                elif typess=='classess_over':
+                    question_set = device_question.objects.filter(q_over=True).order_by('-grade', '-classes')
+
+            else:
+                question_set=device_question.objects.filter(q_over=False).order_by('-q_date')
+                # if typess=='classess':
+                #     question_set = device_question.objects.filter(q_over=False).order_by('grade','classes')
+                # elif typess=='classess_over':
+                #     question_set = device_question.objects.filter(q_over=True).order_by('-grade', '-classes')
             question_dict=sch_engineerModelSerializers(question_set,many=True)
-            response = self.wrap_json_response(data=question_dict.data,code=ReturnCode.IS_ADMIN)
+            response = self.wrap_json_response(data=question_dict.data, code=ReturnCode.IS_ADMIN)
             return JsonResponse(data=response, safe=False)
+
         else:
 
             open_id=request.session['open_id']
@@ -55,15 +70,18 @@ class sch_engineer(APIView, CommonResponseMixin):
             return JsonResponse(data=response, safe=False)
     def post(self, request):
         new_question = request.data['form_contents']
+        import time
+        truly_date = time.strftime('%Y-%m-%d')
         q_date=new_question['q_date']
 
         open_id=request.session['open_id']
-        one_day_count=device_question.objects.filter(user_openid=open_id,q_date=q_date).count()
+        one_day_count=device_question.objects.filter(user_openid=open_id,truly_date=truly_date).count()
         if one_day_count>1:
             response = self.wrap_json_response(code=ReturnCode.WRONG_PARMAS)
             return JsonResponse(data=response, safe=False)
         # user_obj=User.objects.filter(open_id=open_id).first()
         new_question['user_openid']=request.session['open_id']
+        new_question['truly_date']=truly_date
         email_msg='日期:'+new_question['q_date']+'\n'+'班级:'+new_question['grade']+'年'+new_question['classes']+'班'+'\n'+'具体问题:'+new_question['question']
         device_question.objects.create(**new_question)
         msg = MIMEText(email_msg, "plain", "utf-8")

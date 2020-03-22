@@ -138,6 +138,7 @@ Page({
       method: 'GET',
       header: header,
       data: {
+        kind:'undone',
         type:'backstage'
       },
       success: function(res) {

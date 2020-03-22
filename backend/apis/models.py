@@ -20,3 +20,5 @@ class device_question(models.Model):
     q_dealing=models.BooleanField(default=False)
 
     q_over=models.BooleanField(default=False)
+
+    truly_date=models.DateField(auto_now=False)

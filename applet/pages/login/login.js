@@ -92,6 +92,7 @@ Page({
             if(res.data.result_code==-100){
               wx.showToast({
                 title: res.data.message,
+                icon:'none'
               })
             } else if (res.data.result_code == 0) {
               wx.showToast({

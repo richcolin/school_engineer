@@ -347,3 +347,1035 @@ AttributeError: 'dict' object has no attribute 'encode'
 2020-03-20 13:49:23,958 [Thread-2: 5116]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
 2020-03-20 13:57:55,698 [Thread-2: 16960]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
 2020-03-20 14:00:44,647 [Thread-2: 16584]C:\Users\xuekun\AppData\Roaming\Python\Python36\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-22 12:59:11,291 [Thread-2: 2988]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:03:15,855 [Thread-2: 4248]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 60
+2020-03-22 13:03:15,858 [Thread-3: 19964]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 60
+2020-03-22 13:03:27,790 [Thread-3: 19964]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-22 13:03:29,927 [Thread-3: 19964]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 222
+2020-03-22 13:03:32,361 [Thread-3: 19964]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 222
+2020-03-22 13:03:32,375 [Thread-3: 19964]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 222
+2020-03-22 13:03:54,741 [Thread-2: 22060]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 222
+2020-03-22 13:03:55,797 [Thread-2: 22060]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 222
+2020-03-22 13:03:55,838 [Thread-2: 22060]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 222
+2020-03-22 13:08:04,551 [Thread-2: 14740]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:08:08,144 [Thread-2: 14740]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 49, in get
+    question_dict=sch_engineerModelSerializers(question_set,many=True)
+UnboundLocalError: local variable 'question_set' referenced before assignment
+2020-03-22 13:08:08,157 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 49, in get
+    question_dict=sch_engineerModelSerializers(question_set,many=True)
+UnboundLocalError: local variable 'question_set' referenced before assignment
+2020-03-22 13:08:08,157 [Thread-2: 14740]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18213
+2020-03-22 13:08:08,159 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18213
+2020-03-22 13:08:09,387 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 222
+2020-03-22 13:08:09,427 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 222
+2020-03-22 13:08:16,044 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=classess HTTP/1.1" 200 222
+2020-03-22 13:08:18,456 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 49, in get
+    question_dict=sch_engineerModelSerializers(question_set,many=True)
+UnboundLocalError: local variable 'question_set' referenced before assignment
+2020-03-22 13:08:18,457 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18213
+2020-03-22 13:08:20,172 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:08:20,185 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:08:37,353 [Thread-3: 10956]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-22 13:09:33,424 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 386
+2020-03-22 13:09:35,226 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:09:35,258 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:09:40,938 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=classess HTTP/1.1" 200 386
+2020-03-22 13:10:58,995 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:11:03,334 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 386
+2020-03-22 13:11:03,416 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 386
+2020-03-22 13:11:04,675 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:11:04,705 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:11:06,128 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:11:08,996 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=classess HTTP/1.1" 200 386
+2020-03-22 13:11:10,074 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:11:11,100 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=classess HTTP/1.1" 200 386
+2020-03-22 13:11:11,786 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:11:17,537 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 386
+2020-03-22 13:11:19,146 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=classess HTTP/1.1" 200 386
+2020-03-22 13:11:20,748 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 386
+2020-03-22 13:11:25,269 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-22 13:11:25,301 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 222
+2020-03-22 13:11:27,344 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-22 13:11:27,376 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 60
+2020-03-22 13:11:28,215 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 60
+2020-03-22 13:11:28,246 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 60
+2020-03-22 13:11:36,593 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=classess HTTP/1.1" 200 60
+2020-03-22 13:11:37,412 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 60
+2020-03-22 13:11:38,947 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 60
+2020-03-22 13:11:41,233 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:11:41,251 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:11:42,051 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 200 60
+2020-03-22 13:11:43,454 [Thread-2: 19484]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 60
+2020-03-22 13:11:43,457 [Thread-3: 22388]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?type=history HTTP/1.1" 200 60
+2020-03-22 13:21:42,305 [Thread-2: 21332]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:21:45,189 [Thread-2: 21332]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kind=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:21:45,192 [Thread-2: 21332]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18491
+2020-03-22 13:21:45,253 [Thread-2: 21332]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kind=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:21:45,255 [Thread-2: 21332]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18451
+2020-03-22 13:22:21,857 [Thread-2: 1448]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:22:24,472 [Thread-2: 1448]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kind=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:22:24,477 [Thread-3: 2984]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kind=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:22:24,480 [Thread-2: 1448]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18451
+2020-03-22 13:22:24,483 [Thread-3: 2984]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18451
+2020-03-22 13:22:47,484 [Thread-2: 18364]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kinds=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:22:47,487 [Thread-2: 18364]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18452
+2020-03-22 13:23:03,425 [Thread-2: 22420]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kinds=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:23:03,428 [Thread-2: 22420]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18452
+2020-03-22 13:23:45,918 [Thread-2: 6160]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kinds'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kinds=request.GET['kinds']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kinds'
+2020-03-22 13:23:45,921 [Thread-2: 6160]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18456
+2020-03-22 13:24:58,075 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 60
+2020-03-22 13:24:58,106 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 60
+2020-03-22 13:25:00,497 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kinds=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:25:00,500 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18452
+2020-03-22 13:25:07,372 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-22 13:25:08,074 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kinds=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:25:08,075 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18523
+2020-03-22 13:25:09,439 [Thread-2: 11288]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:25:09,442 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:25:11,403 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:25:12,445 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:25:13,158 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:25:13,955 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:25:14,686 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:25:15,403 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:25:22,045 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:25:23,748 [Thread-3: 1480]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:26:24,946 [Thread-2: 5320]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'kind'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 40, in get
+    kinds=request.GET['kind']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'kind'
+2020-03-22 13:26:24,949 [Thread-2: 5320]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?type=backstage HTTP/1.1" 500 18523
+2020-03-22 13:26:31,634 [Thread-2: 5320]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:26:37,643 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 60
+2020-03-22 13:26:37,706 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 60
+2020-03-22 13:26:40,820 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 60
+2020-03-22 13:26:43,086 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:26:43,131 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:26:54,505 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-22 13:26:56,233 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 222
+2020-03-22 13:27:15,937 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:15,982 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:17,068 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:19,104 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:27:19,961 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:20,704 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:27:21,363 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:24,571 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 222
+2020-03-22 13:27:25,968 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-22 13:27:26,011 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:27:28,200 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:28,229 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:29,278 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:27:32,924 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:28:14,088 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:28:17,856 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 42, in get
+    typess=request.GET['type']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'type'
+2020-03-22 13:28:17,859 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?kind=undone HTTP/1.1" 500 18515
+2020-03-22 13:28:17,918 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 42, in get
+    typess=request.GET['type']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'type'
+2020-03-22 13:28:17,920 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?kind=undone HTTP/1.1" 500 18515
+2020-03-22 13:28:26,511 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:28:29,747 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:28:29,833 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:28:31,556 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:28:31,587 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:29:41,464 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:29:44,359 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:29:44,568 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:29:45,341 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:29:45,382 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:29:47,462 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:29:48,752 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:29:49,868 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:29:50,495 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:30:00,727 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:30:08,484 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:30:27,357 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:30:28,097 [Thread-2: 18892]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:32:36,945 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:32:40,202 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:32:40,260 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:32:41,693 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:32:41,725 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:33:06,158 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:33:09,279 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:33:09,369 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:33:10,515 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:33:10,550 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:33:16,805 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:33:17,929 [Thread-2: 7356]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:36:24,351 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 13:36:28,064 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:36:28,128 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:36:29,074 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:36:29,136 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:36:30,723 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:36:31,921 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 884
+2020-03-22 13:36:35,371 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 884
+2020-03-22 13:36:40,486 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:36:44,761 [Thread-2: 21172]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 884
+2020-03-22 13:37:30,195 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:37:32,021 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 884
+2020-03-22 13:37:33,416 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 884
+2020-03-22 13:37:35,989 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 884
+2020-03-22 13:37:40,816 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:37:43,280 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:37:43,327 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:37:53,538 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-22 13:37:54,753 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 386
+2020-03-22 13:37:56,607 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:37:56,650 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 884
+2020-03-22 13:37:58,031 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 386
+2020-03-22 13:38:01,377 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-22 13:38:01,423 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:38:03,274 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1048
+2020-03-22 13:38:03,329 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1048
+2020-03-22 13:38:05,011 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 1048
+2020-03-22 13:38:08,381 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 1048
+2020-03-22 13:38:10,249 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1048
+2020-03-22 13:38:26,919 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 1048
+2020-03-22 13:38:30,788 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 1048
+2020-03-22 13:38:41,044 [Thread-2: 1556]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:39:38,916 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:39:40,980 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 13:39:45,773 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-22 13:39:54,976 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-22 13:39:57,767 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 383
+2020-03-22 13:39:58,949 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1048
+2020-03-22 13:39:58,977 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1048
+2020-03-22 13:40:11,134 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 1048
+2020-03-22 13:40:14,331 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 383
+2020-03-22 13:40:17,491 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-22 13:40:17,531 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:40:19,078 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1209
+2020-03-22 13:40:19,125 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1209
+2020-03-22 13:40:20,056 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 1209
+2020-03-22 13:40:22,487 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 1209
+2020-03-22 13:40:23,258 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1209
+2020-03-22 13:40:23,811 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 1209
+2020-03-22 13:40:28,566 [Thread-2: 2764]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:54:34,371 [Thread-2: 22120]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:54:36,009 [Thread-2: 22120]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 221
+2020-03-22 13:54:40,097 [Thread-2: 22120]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1209
+2020-03-22 13:54:40,157 [Thread-2: 22120]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 1209
+2020-03-22 14:02:46,260 [Thread-2: 5344]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 61, in get
+    response = self.wrap_json_response(data=question_dict.data, code=ReturnCode.IS_ADMIN)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 268, in __iter__
+    self._fetch_all()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'field list'")
+2020-03-22 14:02:46,270 [Thread-2: 5344]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 500 24305
+2020-03-22 14:02:47,960 [Thread-2: 5344]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 14:02:53,981 [Thread-2: 5344]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'where clause'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 78, in post
+    one_day_count=device_question.objects.filter(user_openid=open_id,truly_date=truly_date).count()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'where clause'")
+2020-03-22 14:02:53,991 [Thread-2: 5344]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 500 23694
+2020-03-22 14:03:36,814 [Thread-2: 5344]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'where clause'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 78, in post
+    one_day_count=device_question.objects.filter(user_openid=open_id,truly_date=truly_date).count()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'where clause'")
+2020-03-22 14:03:36,819 [Thread-2: 5344]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 500 23694
+2020-03-22 14:03:53,483 [Thread-2: 9052]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\log.py:log_response:228 ERROR - Internal Server Error: /api/v1.0/service/sch_engineer
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'where clause'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Administrator\Desktop\school_engineer\backend\apis\views\sch_engineer.py", line 78, in post
+    one_day_count=device_question.objects.filter(user_openid=open_id,truly_date=truly_date).count()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'apis_device_question.truly_date' in 'where clause'")
+2020-03-22 14:03:53,495 [Thread-2: 9052]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 ERROR - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 500 23694
+2020-03-22 14:06:27,624 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 14:06:36,220 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-22 14:06:39,475 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 14:06:39,495 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 14:06:53,308 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-22 14:07:07,115 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 40
+2020-03-22 14:07:15,459 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-22 14:07:23,420 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-22 14:07:34,448 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-22 14:07:36,857 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 446
+2020-03-22 14:07:36,922 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 446
+2020-03-22 14:07:44,507 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/logout HTTP/1.1" 200 48
+2020-03-22 14:07:46,359 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/auth/authorize HTTP/1.1" 200 73
+2020-03-22 14:07:47,533 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 442
+2020-03-22 14:07:49,145 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 60
+2020-03-22 14:07:49,193 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 60
+2020-03-22 14:07:51,187 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 442
+2020-03-22 14:07:52,780 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-22 14:07:52,822 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 250
+2020-03-22 14:07:54,459 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "PUT /api/v1.0/service/sch_engineer HTTP/1.1" 200 2
+2020-03-22 14:07:54,509 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 60
+2020-03-22 14:07:55,529 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 440
+2020-03-22 14:07:55,583 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 440
+2020-03-22 14:07:57,133 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 440
+2020-03-22 14:07:58,748 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 440
+2020-03-22 14:07:59,605 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 440
+2020-03-22 14:08:03,627 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 60
+2020-03-22 14:08:33,404 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 14:08:38,394 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "POST /api/v1.0/service/sch_engineer HTTP/1.1" 200 48
+2020-03-22 14:08:46,130 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/menu HTTP/1.1" 200 236
+2020-03-22 14:08:48,271 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/auth/status HTTP/1.1" 200 70
+2020-03-22 14:08:49,232 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage HTTP/1.1" 200 60
+2020-03-22 14:08:50,799 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 440
+2020-03-22 14:08:50,823 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 440
+2020-03-22 14:08:51,929 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 440
+2020-03-22 14:08:52,677 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 440
+2020-03-22 14:08:53,061 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess HTTP/1.1" 200 440
+2020-03-22 14:08:53,494 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=history HTTP/1.1" 200 440
+2020-03-22 14:08:53,816 [Thread-2: 5476]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:136 INFO - "GET /api/v1.0/service/sch_engineer?kind=done&type=classess_over HTTP/1.1" 200 440

@@ -8,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    icon_path:'',
     grids: [{
       "name": "应用1"
     }, {
@@ -47,6 +48,7 @@ Page({
       console.log('-------------')
       wx.switchTab({
         url: '../login/login',
+        
       })
     } else if (item.app.application == 'backup-image') {
       console.log('导航到图片')

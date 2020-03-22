@@ -28,7 +28,48 @@ Page({
     })
 
   },
+  datess:function(){
+    var that = this
+    var cookie = cookieUtil.getCookieFromStorage()
+    var header = {}
+    header.Cookie = cookie
+    wx.request({
+      url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
+      method: 'GET',
+      header: header,
+      data: {
+        kind:'done',
+        type: 'history'
+      },
+      success: function (res) {
 
+        if (res.data.result_code == -500) {
+          that.setData({
+            isAdmin: false,
+            isAuthorized: false
+          })
+          wx.showToast({
+            title: '请到首页进行登录',
+          })
+        } else if (res.data.result_code == 510) {
+          that.setData({
+            isAdmin: false,
+            django_data: res.data.data,
+            isAuthorized: true
+          })
+        }
+        else {
+          that.setData({
+            isAuthorized: true,
+            isAdmin: true,
+            django_data: res.data.data
+          })
+          console.log(that.data.django_data)
+        }
+      }
+    })
+
+  },
   onPullDownRefresh: function () {
     this.onLoad()
   },
@@ -116,6 +157,89 @@ Page({
     })
 
   },
+  classess_over:function(){
+    var that = this
+    var cookie = cookieUtil.getCookieFromStorage()
+    var header = {}
+    header.Cookie = cookie
+    wx.request({
+      url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
+      method: 'GET',
+      header: header,
+      data: {
+        kind: 'done',
+        type: 'classess_over'
+      },
+      success: function (res) {
+
+        if (res.data.result_code == -500) {
+          that.setData({
+            isAdmin: false,
+            isAuthorized: false
+          })
+          wx.showToast({
+            title: '请到首页进行登录',
+          })
+        } else if (res.data.result_code == 510) {
+          that.setData({
+            isAdmin: false,
+            django_data: res.data.data,
+            isAuthorized: true
+          })
+        }
+        else {
+          that.setData({
+            isAuthorized: true,
+            isAdmin: true,
+            django_data: res.data.data
+          })
+          console.log(that.data.django_data)
+        }
+      }
+    })
+  },
+  classess:function(){
+    var that = this
+    var cookie = cookieUtil.getCookieFromStorage()
+    var header = {}
+    header.Cookie = cookie
+    wx.request({
+      url: app.globalData.serverUrl + app.globalData.apiVersion + '/service/sch_engineer',
+      method: 'GET',
+      header: header,
+      data: {
+        kind: 'done',
+        type: 'classess'
+      },
+      success: function (res) {
+
+        if (res.data.result_code == -500) {
+          that.setData({
+            isAdmin: false,
+            isAuthorized: false
+          })
+          wx.showToast({
+            title: '请到首页进行登录',
+          })
+        } else if (res.data.result_code == 510) {
+          that.setData({
+            isAdmin: false,
+            django_data: res.data.data,
+            isAuthorized: true
+          })
+        }
+        else {
+          that.setData({
+            isAuthorized: true,
+            isAdmin: true,
+            django_data: res.data.data
+          })
+          console.log(that.data.django_data)
+        }
+      }
+    })
+
+  },
   onLoad: function () {
     var that = this
     var cookie = cookieUtil.getCookieFromStorage()
@@ -126,6 +250,7 @@ Page({
       method: 'GET',
       header: header,
       data: {
+        kind:'done',
         type:'history'
       },
       success: function (res) {
