@@ -8,6 +8,7 @@
 			<a class="weui-btn weui-btn_mini weui-btn_primary" bindtap='classess'>班级</a>
 			<a class="weui-btn weui-btn_mini weui-btn_default" bindtap='datess'>日期</a>
       <a class="weui-btn weui-btn_mini weui-btn_primary" bindtap='classess_over'>班级倒序</a>
+      <a class="weui-btn weui-btn_mini weui-btn_default" bindtap='nav_echarts'>图表</a>
 		</view>
     </view>
     <view class="page__bd">

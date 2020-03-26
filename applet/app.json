@@ -4,7 +4,9 @@
     "pages/login/login",
     "pages/input/input",
     "pages/backstage/backstage",
-    "pages/history/history"
+    "pages/history/history",
+        "pages/pies/pies"
+   
   ],
   "tabBar": {
     "list": [

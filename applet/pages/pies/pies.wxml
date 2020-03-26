@@ -1,0 +1,8 @@
+<!--index.wxml-->
+
+<view class="echart-container">
+
+      <h2 class="weui-form__title" style="margin-top:100rpx">维修情况饼图</h2>
+
+  <ec-canvas id="mychart-dom-pie" type='2d' canvas-id="mychart-pie" ec="{{ ec }}" bind:init="echartInit"></ec-canvas>
+</view>

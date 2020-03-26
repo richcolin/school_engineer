@@ -18,10 +18,10 @@ Page({
     value1: 0,
     value3: 0,
   },
-  navigateToHistory: function () {
-    console.log('history')
+  nav_echarts: function () {
+    console.log('pies')
     wx.navigateTo({
-      url: '../history/history',
+      url: '../pies/pies',
       success: function (res) { },
       fail: function (res) { console.log(res) },
       complete: function (res) { },
