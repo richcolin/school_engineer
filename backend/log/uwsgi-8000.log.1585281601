@@ -1,0 +1,8 @@
+./apis/views/menu.py:22: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  apps = yaml.load(f)
+[pid: 1527|app: 0|req: 22/54] 60.29.197.75 () {52 vars in 953 bytes} [Fri Mar 27 03:58:08 2020] GET /api/v1.0/service/menu => generated 236 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 1528|app: 0|req: 16/55] 60.29.197.75 () {52 vars in 953 bytes} [Fri Mar 27 03:59:37 2020] GET /api/v1.0/service/menu => generated 236 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+./apis/views/menu.py:22: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  apps = yaml.load(f)
+[pid: 1529|app: 0|req: 6/56] 60.29.197.75 () {52 vars in 953 bytes} [Fri Mar 27 04:00:00 2020] GET /api/v1.0/service/menu => generated 236 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+Fri Mar 27 04:00:01 2020 - logsize: 1071, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585281601...

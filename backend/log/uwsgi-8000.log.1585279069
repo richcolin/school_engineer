@@ -1,0 +1,12 @@
+done
+authorized status: True
+[pid: 1527|app: 0|req: 11/25] 60.29.197.75 () {56 vars in 1182 bytes} [Fri Mar 27 03:16:52 2020] GET /api/v1.0/service/sch_engineer?kind=done&type=classess => generated 1015 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 162 bytes (2 switches on core 0)
+<QuerySet [{'grade': 1, 'classes': 2, 'id__count': 2}, {'grade': 1, 'classes': 1, 'id__count': 3}]>
+5
+[{'name': '1年2\n40%', 'value': 40}, {'name': '1年1\n60%', 'value': 60}]
+[pid: 1530|app: 0|req: 6/26] 60.29.197.75 () {54 vars in 998 bytes} [Fri Mar 27 03:17:48 2020] GET /api/v1.0/service/echartss => generated 130 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 150 bytes (2 switches on core 0)
+<QuerySet [{'grade': 1, 'classes': 2, 'id__count': 2}, {'grade': 1, 'classes': 1, 'id__count': 3}]>
+5
+[{'name': '1年2\n40%', 'value': 40}, {'name': '1年1\n60%', 'value': 60}]
+[pid: 1528|app: 0|req: 9/27] 60.29.197.75 () {54 vars in 998 bytes} [Fri Mar 27 03:17:48 2020] GET /api/v1.0/service/echartss => generated 130 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 150 bytes (2 switches on core 0)
+Fri Mar 27 03:17:49 2020 - logsize: 1077, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585279069...

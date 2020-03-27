@@ -1,0 +1,21 @@
+call get_status function...
+authorized status: True
+[pid: 1528|app: 0|req: 3/7] 60.29.197.75 () {56 vars in 1117 bytes} [Fri Mar 27 03:15:19 2020] GET /api/v1.0/auth/status => generated 70 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (2 switches on core 0)
+call get_status function...
+authorized status: True
+[pid: 1527|app: 0|req: 4/8] 60.29.197.75 () {56 vars in 1117 bytes} [Fri Mar 27 03:15:19 2020] GET /api/v1.0/auth/status => generated 70 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+send: 'ehlo localhost.localdomain\r\n'
+reply: b'250-newxmesmtplogicsvrszb3.qq.com\r\n'
+reply: b'250-PIPELINING\r\n'
+reply: b'250-SIZE 73400320\r\n'
+reply: b'250-AUTH LOGIN PLAIN\r\n'
+reply: b'250-AUTH=LOGIN\r\n'
+reply: b'250-MAILCOMPRESS\r\n'
+reply: b'250 8BITMIME\r\n'
+reply: retcode (250); Msg: b'newxmesmtplogicsvrszb3.qq.com\nPIPELINING\nSIZE 73400320\nAUTH LOGIN PLAIN\nAUTH=LOGIN\nMAILCOMPRESS\n8BITMIME'
+send: 'AUTH PLAIN ADgyMTkwODMwM0BxcS5jb20Ac3dhb3Njcmt3bmloYmZmYw==\r\n'
+reply: b'235 Authentication successful\r\n'
+reply: retcode (235); Msg: b'Authentication successful'
+send: 'mail FROM:<821908303@qq.com> size=236\r\n'
+reply: b'250 OK.\r\n'
+Fri Mar 27 03:15:33 2020 - logsize: 1189, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585278933...

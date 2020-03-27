@@ -1,0 +1,11 @@
+<QuerySet [{'grade': 1, 'classes': 2, 'id__count': 2}, {'grade': 1, 'classes': 1, 'id__count': 3}]>
+5
+[{'name': '1年2\n40%', 'value': 40}, {'name': '1年1\n60%', 'value': 60}]
+[pid: 1530|app: 0|req: 17/81] 60.29.197.75 () {52 vars in 961 bytes} [Fri Mar 27 04:21:52 2020] GET /api/v1.0/service/echartss => generated 130 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 150 bytes (2 switches on core 0)
+<QuerySet [{'grade': 1, 'classes': 2, 'id__count': 2}, {'grade': 1, 'classes': 1, 'id__count': 3}]>
+5
+[{'name': '1年2\n40%', 'value': 40}, {'name': '1年1\n60%', 'value': 60}]
+[pid: 1529|app: 0|req: 10/82] 60.29.197.75 () {52 vars in 961 bytes} [Fri Mar 27 04:21:52 2020] GET /api/v1.0/service/echartss => generated 130 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 150 bytes (2 switches on core 0)
+[pid: 1527|app: 0|req: 32/83] 60.29.197.75 () {52 vars in 954 bytes} [Fri Mar 27 04:57:27 2020] GET /api/v1.0/service/menu => generated 236 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+call get_status function...
+Fri Mar 27 04:57:55 2020 - logsize: 1044, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585285075...

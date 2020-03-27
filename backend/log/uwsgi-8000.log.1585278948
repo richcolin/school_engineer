@@ -1,0 +1,20 @@
+reply: retcode (250); Msg: b'OK.'
+send: 'rcpt TO:<821908303@qq.com>\r\n'
+reply: b'250 OK\r\n'
+reply: retcode (250); Msg: b'OK'
+send: 'data\r\n'
+reply: b'354 End data with <CR><LF>.<CR><LF>.\r\n'
+reply: retcode (354); Msg: b'End data with <CR><LF>.<CR><LF>.'
+data: (354, b'End data with <CR><LF>.<CR><LF>.')
+send: b'Content-Type: text/plain; charset="utf-8"\r\nMIME-Version: 1.0\r\nContent-Transfer-Encoding: base64\r\nFROM: =?utf-8?b?57u05L+u6YOo?=\r\nSubject: =?utf-8?b?5oql5L+u5Y2V?=\r\n\r\n5pel5pyfOjIwMjAtMDQtMjcK54+t57qnOjHlubQx54+tCuWFt+S9k+mXrumimDoxMjM=\r\n.\r\n'
+reply: b'250 OK: queued as.\r\n'
+reply: retcode (250); Msg: b'OK: queued as.'
+data: (250, b'OK: queued as.')
+[pid: 1530|app: 0|req: 2/9] 60.29.197.75 () {60 vars in 1200 bytes} [Fri Mar 27 03:15:32 2020] POST /api/v1.0/service/sch_engineer => generated 40 bytes in 836 msecs (HTTP/1.1 200) 5 headers in 160 bytes (2 switches on core 0)
+undone
+authorized status: True
+[pid: 1527|app: 0|req: 5/10] 60.29.197.75 () {56 vars in 1188 bytes} [Fri Mar 27 03:15:47 2020] GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage => generated 446 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 161 bytes (2 switches on core 0)
+undone
+authorized status: True
+[pid: 1528|app: 0|req: 4/11] 60.29.197.75 () {56 vars in 1188 bytes} [Fri Mar 27 03:15:47 2020] GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage => generated 446 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 161 bytes (1 switches on core 0)
+Fri Mar 27 03:15:48 2020 - logsize: 1476, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585278948...

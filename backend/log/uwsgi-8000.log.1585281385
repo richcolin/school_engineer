@@ -1,0 +1,7 @@
+2020-03-27 03:56:14,799 [uWSGIWorker1Core0: 140173502666560]/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py:get_response:93 WARNING - Not Found: /favicon.ico
+[pid: 1527|app: 0|req: 19/45] 60.29.197.75 () {40 vars in 667 bytes} [Fri Mar 27 03:56:14 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 0)
+[pid: 1528|app: 0|req: 14/46] 60.29.197.75 () {44 vars in 792 bytes} [Fri Mar 27 03:56:15 2020] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 1530|app: 0|req: 10/47] 60.29.197.75 () {44 vars in 829 bytes} [Fri Mar 27 03:56:15 2020] GET /admin/login/?next=/admin/ => generated 1855 bytes in 15 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 1527|app: 0|req: 20/48] 60.29.197.75 () {44 vars in 792 bytes} [Fri Mar 27 03:56:24 2020] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 1529|app: 0|req: 5/49] 60.29.197.75 () {44 vars in 829 bytes} [Fri Mar 27 03:56:24 2020] GET /admin/login/?next=/admin/ => generated 1855 bytes in 16 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+Fri Mar 27 03:56:25 2020 - logsize: 1243, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585281385...

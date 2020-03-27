@@ -24,7 +24,7 @@ USE_PROXY = False
 SECRET_KEY = 'bb8a25eb98f1cb7e2d7e7924475aa7c6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 

@@ -1,0 +1,7 @@
+[pid: 1527|app: 0|req: 1/1] 60.29.197.75 () {52 vars in 949 bytes} [Fri Mar 27 03:13:27 2020] GET /admin/ => generated 0 bytes in 699 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 1528|app: 0|req: 1/2] 60.29.197.75 () {52 vars in 986 bytes} [Fri Mar 27 03:13:28 2020] GET /admin/login/?next=/admin/ => generated 1855 bytes in 352 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+2020-03-27 03:13:28,984 [uWSGIWorker1Core0: 140173502666560]/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py:get_response:93 WARNING - Not Found: /favicon.ico
+[pid: 1527|app: 0|req: 2/3] 60.29.197.75 () {50 vars in 880 bytes} [Fri Mar 27 03:13:28 2020] GET /favicon.ico => generated 85 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 0)
+./apis/views/menu.py:22: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  apps = yaml.load(f)
+Fri Mar 27 03:13:41 2020 - logsize: 1026, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585278821...

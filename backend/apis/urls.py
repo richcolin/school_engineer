@@ -8,7 +8,7 @@
 
 from django.urls import path
 
-from .views import  menu, image, service,test_frame,sch_engineer
+from .views import  menu, image, service,test_frame,sch_engineer,echartss
 
 urlpatterns = [
     # path('', weather.helloworld)
@@ -22,5 +22,6 @@ urlpatterns = [
     path('today', service.history_today),
     path('stock', service.stock),
     path('sch_engineer', sch_engineer.sch_engineer.as_view()),
-    path('menu', menu.get_menu)
+    path('menu', menu.get_menu),
+    path('echartss',echartss.echartss.as_view())
 ]

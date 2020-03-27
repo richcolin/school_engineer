@@ -1,0 +1,7 @@
+[pid: 1530|app: 0|req: 8/36] 60.29.197.75 () {42 vars in 670 bytes} [Fri Mar 27 03:38:04 2020] GET /favicon.ico => generated 85 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 0)
+2020-03-27 03:38:13,103 [uWSGIWorker1Core0: 140173502666560]/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py:get_response:93 WARNING - Not Found: /
+[pid: 1527|app: 0|req: 15/37] 27.115.124.6 () {46 vars in 930 bytes} [Fri Mar 27 03:38:13 2020] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 0)
+2020-03-27 03:38:32,947 [uWSGIWorker3Core0: 140173502666560]/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py:get_response:93 WARNING - Not Found: /
+[pid: 1529|app: 0|req: 3/38] 27.115.124.6 () {46 vars in 931 bytes} [Fri Mar 27 03:38:32 2020] GET / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 100 bytes (2 switches on core 0)
+[pid: 1527|app: 0|req: 16/39] 60.29.197.75 () {42 vars in 701 bytes} [Fri Mar 27 03:38:57 2020] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+Fri Mar 27 03:38:57 2020 - logsize: 1149, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585280337...

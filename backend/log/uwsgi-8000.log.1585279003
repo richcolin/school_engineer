@@ -1,0 +1,11 @@
+over
+[pid: 1527|app: 0|req: 8/17] 60.29.197.75 () {60 vars in 1199 bytes} [Fri Mar 27 03:16:38 2020] PUT /api/v1.0/service/sch_engineer => generated 2 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 159 bytes (2 switches on core 0)
+undone
+authorized status: True
+[pid: 1528|app: 0|req: 6/18] 60.29.197.75 () {56 vars in 1188 bytes} [Fri Mar 27 03:16:38 2020] GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage => generated 250 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 161 bytes (2 switches on core 0)
+over
+[pid: 1530|app: 0|req: 4/19] 60.29.197.75 () {60 vars in 1199 bytes} [Fri Mar 27 03:16:42 2020] PUT /api/v1.0/service/sch_engineer => generated 2 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 159 bytes (2 switches on core 0)
+undone
+authorized status: True
+[pid: 1527|app: 0|req: 9/20] 60.29.197.75 () {56 vars in 1188 bytes} [Fri Mar 27 03:16:42 2020] GET /api/v1.0/service/sch_engineer?kind=undone&type=backstage => generated 60 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 160 bytes (1 switches on core 0)
+Fri Mar 27 03:16:43 2020 - logsize: 1027, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585279003...

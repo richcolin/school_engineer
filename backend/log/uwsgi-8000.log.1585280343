@@ -1,0 +1,6 @@
+[pid: 1530|app: 0|req: 9/40] 60.29.197.75 () {42 vars in 703 bytes} [Fri Mar 27 03:38:57 2020] GET /admin/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 1527|app: 0|req: 17/41] 60.29.197.75 () {42 vars in 740 bytes} [Fri Mar 27 03:38:57 2020] GET /admin/login/?next=/admin/ => generated 1855 bytes in 15 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 1528|app: 0|req: 13/42] 180.163.220.4 () {46 vars in 942 bytes} [Fri Mar 27 03:39:02 2020] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (2 switches on core 0)
+[pid: 1529|app: 0|req: 4/43] 180.163.220.4 () {46 vars in 944 bytes} [Fri Mar 27 03:39:02 2020] GET /admin/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 7 headers in 265 bytes (2 switches on core 0)
+[pid: 1527|app: 0|req: 18/44] 180.163.220.4 () {46 vars in 981 bytes} [Fri Mar 27 03:39:02 2020] GET /admin/login/?next=/admin/ => generated 1855 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Fri Mar 27 03:39:03 2020 - logsize: 1052, triggering rotation to /home/ubuntu/school_engineer/backend/log/uwsgi-8000.log.1585280343...
