@@ -22,3 +22,5 @@ class device_question(models.Model):
     q_over=models.BooleanField(default=False)
 
     truly_date=models.DateField(auto_now=False)
+    def __str__(self):
+        return self.q_date

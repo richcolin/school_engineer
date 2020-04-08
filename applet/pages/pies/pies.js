@@ -22,7 +22,7 @@ function initChart(canvas, width, height) {
             }
           },
           type: 'pie',
-          center: ['50%', '50%'],
+          center: ['50%', '40%'],
           radius: [0, '55%'],
           // data:fruit,
           data: fruit,

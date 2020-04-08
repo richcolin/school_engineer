@@ -51,8 +51,6 @@ class sch_engineer(APIView, CommonResponseMixin):
                     question_set = device_question.objects.filter(q_over=True).order_by('grade','classes')
                 elif typess=='classess_over':
                     question_set = device_question.objects.filter(q_over=True).order_by('-grade', '-classes')
-
-
             else:
                 question_set=device_question.objects.filter(q_over=False).order_by('-q_date')
                 # if typess=='classess':

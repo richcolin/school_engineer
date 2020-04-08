@@ -37,7 +37,7 @@ App({
     return this.globalData.auth.isAuthorized
   },
 
-  setAuthStatus: function (status) {
+  setAuthStatus: function (status) { 
     console.log('set auth status: ' + status)
     if (status == true || status == false) {
       this.globalData.auth.isAuthorized = status
@@ -51,9 +51,9 @@ App({
   globalData: {
     userInfo: null,
     appId: 'wxbb89b306b4346193',
-    // serverUrl: 'https://richcolin.xyz',
+    serverUrl: 'https://richcolin.xyz',
     // serverUrl: 'https://62.234.90.183',
-    serverUrl: 'http://127.0.0.1:8000',
+    // serverUrl: 'http://127.0.0.1:8000',
     apiVersion: '/api/v1.0',
     auth: {
       isAuthorized: false

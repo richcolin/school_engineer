@@ -2,7 +2,7 @@
 //获取应用实例
 const app = getApp()
 const cookieUtil = require('../../utils/cookie.js')
-
+const authUtil = require('../../utils/auth.js')
 Page({
   data: {
     toast_reflection:'',
@@ -78,29 +78,23 @@ Page({
 
   onLoad: function () {
     var that = this
-    var cookie = cookieUtil.getCookieFromStorage()
-    var header = {}
-    header.Cookie = cookie
-    wx.request({
-      url: app.globalData.serverUrl + app.globalData.apiVersion + '/auth/status',
-      header: header,
-      success: function (res) {
-        var data = res.data.data
-        if (data.is_authorized == 1) {
-          that.setData({
-            isAuthorized: true
-          })
-   
-        } else {
-          that.setData({
-            isAuthorized: false
-          })
-          wx.showToast({
-            title: '请先授权登录',
-          })
-        }
+    var promise = authUtil.getStatus(app)
+    promise.then(function (status) {
+      if (status) {
+        that.updateData()
+        that.setData({
+          isAuthorized: true
+        })
+      } else {
+        that.setData({
+          isAuthorized: false
+        })
+        wx.showToast({
+          title: '请先授权登录',
+        })
       }
     })
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

@@ -142,7 +142,6 @@ Page({
         type:'backstage'
       },
       success: function(res) {
-        
         if (res.data.result_code == -500) {
           that.setData({
             isAdmin: false,
