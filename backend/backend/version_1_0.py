@@ -8,8 +8,9 @@
 
 from django.contrib import admin
 from django.urls import path, include
-
+import index
 urlpatterns = [
     path('service/', include('apis.urls')),
-    path('auth/', include('authorization.urls'))
+    path('auth/', include('authorization.urls')),
+
 ]

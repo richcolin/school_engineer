@@ -4004,3 +4004,80 @@ TypeError: append() takes exactly one argument (2 given)
 2020-04-08 20:10:43,680 [Thread-30: 20872]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /admin/auth/group/ HTTP/1.1" 200 4878
 2020-04-08 20:10:43,704 [Thread-31: 27308]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3185
 2020-04-08 20:10:44,389 [Thread-32: 31592]C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET /admin/ HTTP/1.1" 200 4514
+2020-04-21 14:11:52,687 [Thread-2: 9000]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py:handle_uncaught_exception:118 ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\新建文件夹\backend\index\views.py", line 7, in get
+    return render(req,'index.html')
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+2020-04-21 14:11:53,457 [Thread-2: 9000]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 ERROR - "GET / HTTP/1.1" 500 91669
+2020-04-21 14:11:54,388 [Thread-3: 6948]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py:get_response:93 WARNING - Not Found: /favicon.ico
+2020-04-21 14:11:54,388 [Thread-3: 6948]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 WARNING - "GET /favicon.ico HTTP/1.1" 404 2182
+2020-04-21 14:12:41,799 [Thread-2: 8308]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py:handle_uncaught_exception:118 ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\新建文件夹\backend\index\views.py", line 7, in get
+    return render(req,'index.html')
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+2020-04-21 14:12:41,971 [Thread-2: 8308]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 ERROR - "GET / HTTP/1.1" 500 91669
+2020-04-21 14:13:40,950 [Thread-2: 4632]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py:handle_uncaught_exception:118 ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\新建文件夹\backend\index\views.py", line 7, in get
+    return render(req,'index.html')
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+2020-04-21 14:13:41,043 [Thread-2: 4632]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 ERROR - "GET / HTTP/1.1" 500 91804
+2020-04-21 14:14:44,715 [Thread-2: 8712]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET / HTTP/1.1" 200 6272
+2020-04-21 14:14:44,883 [Thread-3: 9152]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py:get_response:93 WARNING - Not Found: /assets/js/argon.min.js
+2020-04-21 14:14:44,883 [Thread-3: 9152]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 WARNING - "GET /assets/js/argon.min.js HTTP/1.1" 404 2215
+2020-04-21 14:15:10,123 [Thread-2: 8720]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET / HTTP/1.1" 200 6272
+2020-04-21 14:15:10,150 [Thread-3: 8468]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py:get_response:93 WARNING - Not Found: /assets/js/argon.min.js
+2020-04-21 14:15:10,151 [Thread-3: 8468]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 WARNING - "GET /assets/js/argon.min.js HTTP/1.1" 404 2215
+2020-04-21 14:15:14,294 [Thread-5: 5288]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 INFO - "GET / HTTP/1.1" 200 6272
+2020-04-21 14:15:14,316 [Thread-6: 8188]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py:get_response:93 WARNING - Not Found: /assets/js/argon.min.js
+2020-04-21 14:15:14,316 [Thread-6: 8188]C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\servers\basehttp.py:log_message:124 WARNING - "GET /assets/js/argon.min.js HTTP/1.1" 404 2215
